@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Merve Özer is a Computer Engineering graduate focused on artificial intelligence, computer vision, robotics and software development." />
+  <meta name="keywords" content="Merve Özer, Computer Engineer, AI, Computer Vision, Robotics, Software Development, Portfolio" />
+  <meta name="author" content="Merve Özer" />
+  <meta property="og:title" content="Merve Özer | Computer Engineer | AI & Robotics" />
+  <meta property="og:description" content="Merve Özer is a Computer Engineering graduate focused on artificial intelligence, computer vision, robotics and software development." />
+  <meta property="og:type" content="website" />
+  <title>Merve Özer | Computer Engineer | AI & Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Merve Özer - Home">MERVE ÖZER</a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"        class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="#projects"     class="nav-link" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#experience"   class="nav-link" data-i18n="nav_experience">Experience</a></li>
+        <li><a href="#skills"       class="nav-link" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#achievements" class="nav-link" data-i18n="nav_achievements">Achievements</a></li>
+        <li><a href="#research"     class="nav-link" data-i18n="nav_research">Research</a></li>
+        <li><a href="#contact"      class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Social Icons -->
+        <a href="#" class="nav-social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/merveozrr" class="nav-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" id="btnEN" onclick="setLanguage('en')" aria-pressed="true">EN</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button class="lang-btn" id="btnTR" onclick="setLanguage('tr')" aria-pressed="false">TR</button>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero-section" aria-label="Hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting" data-i18n="hero_greeting">Hi, I'm</p>
+          <h1 class="hero-name">Merve Özer</h1>
+          <h2 class="hero-title" data-i18n="hero_title">Computer Engineer</h2>
+          <p class="hero-tags" aria-label="Specializations">
+            <span>AI</span>
+            <span class="tag-dot" aria-hidden="true">•</span>
+            <span data-i18n="hero_tag_cv">Computer Vision</span>
+            <span class="tag-dot" aria-hidden="true">•</span>
+            <span>Robotics</span>
+            <span class="tag-dot" aria-hidden="true">•</span>
+            <span data-i18n="hero_tag_sw">Software Development</span>
+          </p>
+          <p class="hero-description" data-i18n="hero_description">
+            I build intelligent systems by combining software engineering, artificial intelligence, computer vision and robotics.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">View My Projects</a>
+            <a href="assets/cv/Merve_Ozer_CV.pdf" class="btn btn-secondary" download data-i18n="hero_cta_cv">Download CV</a>
+          </div>
+          <div class="hero-socials">
+            <a href="#" class="hero-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/merveozrr" class="hero-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Neural Network Canvas Animation -->
+        <div class="hero-visual" aria-hidden="true">
+          <canvas id="neuralCanvas"></canvas>
+          <div class="hero-visual-overlay">
+            <div class="visual-badge">
+              <span class="badge-dot"></span>
+              <span data-i18n="hero_badge">Available for opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="about_label">Who I Am</span>
+          <h2 class="section-title" id="about-heading" data-i18n="about_title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p data-i18n="about_p1">
+              I'm a Computer Engineering graduate from İstanbul Sabahattin Zaim University (2022–2026), passionate about building systems that sit at the intersection of software, intelligence, and the physical world.
+            </p>
+            <p data-i18n="about_p2">
+              My work spans autonomous robotics, real-time computer vision, embedded systems, and full-stack software development. I enjoy tackling complex engineering challenges — from deploying SLAM-based navigation on a TurtleBot to training custom object detection models for mobile deployment.
+            </p>
+            <p data-i18n="about_p3">
+              I've had the chance to contribute to research, compete at TEKNOFEST, publish a conference paper, and deliver real-world software during internships. I'm always looking for the next problem worth solving.
+            </p>
+            <div class="about-meta">
+              <div class="about-meta-item">
+                <span class="meta-label" data-i18n="about_university">University</span>
+                <span class="meta-value">İstanbul Sabahattin Zaim University</span>
+              </div>
+              <div class="about-meta-item">
+                <span class="meta-label" data-i18n="about_degree">Degree</span>
+                <span class="meta-value" data-i18n="about_degree_val">B.Sc. Computer Engineering</span>
+              </div>
+              <div class="about-meta-item">
+                <span class="meta-label">GPA</span>
+                <span class="meta-value">3.13 / 4.00</span>
+              </div>
+              <div class="about-meta-item">
+                <span class="meta-label" data-i18n="about_period">Period</span>
+                <span class="meta-value">2022 – 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label" data-i18n="stat_projects">Major Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">4</span>
+              <span class="stat-label" data-i18n="stat_exp">Professional Experiences</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1</span>
+              <span class="stat-label" data-i18n="stat_pub">Research Publication</span>
+            </div>
+            <div class="stat-card stat-card--accent">
+              <span class="stat-number">TEKNOFEST</span>
+              <span class="stat-label" data-i18n="stat_teknofest">Finalist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section section--alt" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="projects_label">What I've Built</span>
+          <h2 class="section-title" id="projects-heading" data-i18n="projects_title">Featured Projects</h2>
+        </div>
+        <!-- Cards injected by JS -->
+        <div class="projects-grid" id="projectsGrid" role="list"></div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="exp_label">Where I've Worked</span>
+          <h2 class="section-title" id="experience-heading" data-i18n="exp_title">Experience</h2>
+        </div>
+        <!-- Timeline injected by JS -->
+        <div class="timeline" id="experienceTimeline" role="list"></div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section section--alt" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="skills_label">What I Work With</span>
+          <h2 class="section-title" id="skills-heading" data-i18n="skills_title">Technical Skills</h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section id="achievements" class="section" aria-labelledby="achievements-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="ach_label">Recognition</span>
+          <h2 class="section-title" id="achievements-heading" data-i18n="ach_title">Achievements</h2>
+        </div>
+        <div class="achievement-card reveal" role="article">
+          <div class="achievement-icon" aria-hidden="true">🏆</div>
+          <div class="achievement-body">
+            <div class="achievement-event">TEKNOFEST 2025</div>
+            <h3 class="achievement-name" data-i18n="ach_competition">AI in Aviation Competition</h3>
+            <p class="achievement-desc" data-i18n="ach_desc">
+              Served as Team Captain. Qualified for the finals by ranking in the top 33 out of 122 teams — finishing <strong>16th overall</strong>.
+            </p>
+            <div class="achievement-tags">
+              <span class="skill-tag" data-i18n="ach_tag1">Team Captain</span>
+              <span class="skill-tag" data-i18n="ach_tag2">Finalist</span>
+              <span class="skill-tag">16 / 122</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESEARCH ========== -->
+    <section id="research" class="section section--alt" aria-labelledby="research-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="research_label">Academic Work</span>
+          <h2 class="section-title" id="research-heading" data-i18n="research_title">Research &amp; Publications</h2>
+        </div>
+
+        <!-- Publication Card -->
+        <div class="publication-card reveal" role="article">
+          <div class="pub-year">2024</div>
+          <div class="pub-body">
+            <h3 class="pub-title" data-i18n="pub_title">
+              Performance Evaluation of Traditional and Deep Learning-Based Face Recognition Algorithms
+            </h3>
+            <p class="pub-meta">
+              <span class="pub-author">Merve Özer</span>
+              <span class="pub-separator" aria-hidden="true">·</span>
+              <span class="pub-venue" data-i18n="pub_venue">International Open Source Conference Proceedings</span>
+            </p>
+            <p class="pub-desc" data-i18n="pub_desc">
+              A comparative study evaluating the performance of classical face recognition methods against modern deep learning approaches, with empirical benchmarks across multiple datasets.
+            </p>
+            <a href="#" class="btn btn-outline btn-sm pub-link" aria-label="Read publication" data-i18n="pub_read">
+              Read Publication →
+            </a>
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="section-subheader reveal">
+          <h3 class="subsection-title" data-i18n="cert_title">Certificates</h3>
+        </div>
+        <div class="certs-grid" id="certsGrid"></div>
+
+        <!-- Education -->
+        <div class="section-subheader reveal">
+          <h3 class="subsection-title" data-i18n="edu_title">Education</h3>
+        </div>
+        <div class="education-card reveal" role="article">
+          <div class="edu-icon" aria-hidden="true">🎓</div>
+          <div class="edu-body">
+            <h3 class="edu-university">İstanbul Sabahattin Zaim University</h3>
+            <p class="edu-degree" data-i18n="edu_degree">B.Sc. Computer Engineering</p>
+            <p class="edu-period">2022 – 2026</p>
+            <p class="edu-gpa">GPA: <strong>3.13 / 4.00</strong></p>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section-subheader reveal">
+          <h3 class="subsection-title" data-i18n="lang_title">Languages</h3>
+        </div>
+        <div class="languages-row reveal">
+          <div class="language-item">
+            <span class="lang-name" data-i18n="lang_turkish">Turkish</span>
+            <span class="lang-level" data-i18n="lang_native">Native</span>
+          </div>
+          <div class="language-item">
+            <span class="lang-name" data-i18n="lang_english">English</span>
+            <span class="lang-level">B2</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="contact_label">Get In Touch</span>
+          <h2 class="section-title" id="contact-heading" data-i18n="contact_title">Let's build something together.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-intro" data-i18n="contact_intro">
+              I'm open to new opportunities, collaborations, and interesting conversations. Feel free to reach out.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:merveozrr.01@gmail.com" class="contact-link" aria-label="Send email to Merve Özer">
+                <span class="contact-link-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </span>
+                merveozrr.01@gmail.com
+              </a>
+              <a href="https://linkedin.com/in/merveozrr" class="contact-link" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </span>
+                linkedin.com/in/merveozrr
+              </a>
+              <a href="#" class="contact-link" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+                <span class="contact-link-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </span>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form reveal" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="formName" data-i18n="form_name">Name</label>
+              <input type="text" id="formName" name="name" autocomplete="name" required aria-required="true" data-i18n-placeholder="form_name_ph" placeholder="Your name" />
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="formEmail" data-i18n="form_email">Email</label>
+              <input type="email" id="formEmail" name="email" autocomplete="email" required aria-required="true" data-i18n-placeholder="form_email_ph" placeholder="your@email.com" />
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="formMessage" data-i18n="form_message">Message</label>
+              <textarea id="formMessage" name="message" rows="5" required aria-required="true" data-i18n-placeholder="form_message_ph" placeholder="Your message..."></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form_send">Send Message</button>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              <span data-i18n="form_success">✓ Thanks! Your message has been prepared.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-name">Merve Özer</span>
+          <span class="footer-role" data-i18n="footer_role">Computer Engineer</span>
+          <span class="footer-tags">AI • Computer Vision • Robotics</span>
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/merveozrr" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="mailto:merveozrr.01@gmail.com" class="footer-social" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Merve Özer</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== PROJECT MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" hidden>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
