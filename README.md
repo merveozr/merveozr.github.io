@@ -35,3 +35,4 @@ Default language is English. Users can switch via the `EN | TR` toggle in the na
 
 Semantic HTML, ARIA labels, keyboard navigation, focus states, and `prefers-reduced-motion` support are built in.
 # merveozr.github.io
+# merveozr.github.io
